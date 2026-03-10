@@ -44,7 +44,7 @@ go install github.com/har777/gvault@latest
 Run:
 
 ```sh
-./gvault init
+gvault init
 ```
 
 This creates:
@@ -67,7 +67,7 @@ Example:
   "password": "your-password",
   "git_url": "git@github.com:you/private-backups.git",
   "folders": [
-    "/Users/you/Documents/notes",
+    "/Users/you/Documents/notes", 
     "/Users/you/Documents/journal"
   ]
 }
@@ -78,7 +78,7 @@ Example:
 Create or update a backup:
 
 ```sh
-./gvault backup
+gvault backup
 ```
 
 If files changed, `gvault` prints:
@@ -96,13 +96,13 @@ backup skipped: no changes
 Restore the latest backup:
 
 ```sh
-./gvault fetch /path/to/restore
+gvault fetch /path/to/restore
 ```
 
 Restore a specific revision:
 
 ```sh
-./gvault fetch /path/to/restore <git-hash>
+gvault fetch /path/to/restore <git-hash>
 ```
 
 ## Restore Layout
@@ -137,5 +137,5 @@ Restore layout:
 ## Cron Example
 
 ```cron
-30 2 * * * /path/to/gvault backup >> /tmp/gvault-cron.log 2>&1
+30 2 * * * gvault backup >> /tmp/gvault-cron.log 2>&1
 ```
