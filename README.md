@@ -33,6 +33,12 @@ Build dependencies use the Go toolchain only.
 go build .
 ```
 
+Or install the binary with Go:
+
+```sh
+go install github.com/har777/gvault@latest
+```
+
 ## Configuration
 
 Run:
