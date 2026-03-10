@@ -4,6 +4,8 @@
 
 It is intended for simple personal backups run manually or from `cron`.
 
+**note**: this is entirely vibecoded by codex.
+
 ## How It Works
 
 `gvault` keeps two local repositories under `~/.gvault`:
